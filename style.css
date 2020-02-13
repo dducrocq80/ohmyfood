@@ -1,0 +1,47 @@
+header
+{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    background-color: #579c87;
+    color: #fdcb46;
+    height: 150px;        
+}
+
+footer
+{
+    display: flex;
+    justify-content:space-between;
+    background-color: #579c87;
+    color: #fdcb46;    
+    margin-top: 50px;              
+}
+
+.conteneur_flexbox
+{
+    display: flex;
+    justify-content:space-around;
+    flex-direction:row;      
+}
+
+.section_prochainement
+{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    background-color: #579c87;
+    color: #fdcb46;
+    width: 275px;
+    height: 70px;    
+    border-radius: 30px;        
+}
+
+.mentions
+{
+    text-align: left;    
+}
+
+.contact
+{
+    text-align: right;    
+}
