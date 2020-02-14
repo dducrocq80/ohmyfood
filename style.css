@@ -5,24 +5,57 @@ header
     justify-content: center; 
     background-color: #579c87;
     color: #fdcb46;
-    height: 150px;        
+    height: 150px;
+    margin-bottom: 50px;
 }
 
 footer
 {
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    position: fixed;
+    bottom: 0px;
     background-color: #579c87;
     color: #fdcb46;    
-    margin-top: 50px;              
+    width:100%;        
 }
 
 .conteneur_flexbox
 {
     display: flex;
     justify-content:space-around;
-    flex-direction:row;      
+    flex-direction:row;
+    margin-top: 50px;    
 }
+
+.menu1
+{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.menu2
+{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.menu3
+{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.menu4
+{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+}
+
 
 .section_prochainement
 {
@@ -33,15 +66,19 @@ footer
     color: #fdcb46;
     width: 275px;
     height: 70px;    
-    border-radius: 30px;        
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;    
 }
 
+/*
 .mentions
 {
-    text-align: left;    
+    text-align: left;
 }
 
 .contact
 {
     text-align: right;    
 }
+*/
