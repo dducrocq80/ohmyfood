@@ -25,7 +25,7 @@ footer
     display: flex;
     justify-content:space-around;
     flex-direction:row;
-    margin-top: 50px;    
+    margin-top: 50px;  
 }
 
 .menu1
@@ -68,7 +68,7 @@ footer
     height: 70px;    
     border-radius: 30px;
     margin-top: 50px;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
 }
 
 /*
