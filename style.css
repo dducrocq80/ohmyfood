@@ -1,3 +1,14 @@
+@font-face
+{
+    font-family: 'FiraSans-Bold';
+    src: url('fonts/fira_sans/FiraSans-Bold.otf');    
+}
+@font-face
+{
+    font-family: 'devonshir';
+    src: url('fonts/devonshir/devonshire-regular.ttf') format('truetype');
+}
+
 header
 {
     display: flex; 
@@ -7,6 +18,7 @@ header
     color: #fdcb46;
     height: 150px;
     margin-bottom: 50px;
+    font-family: 'Firasans-Bold';
 }
 
 footer
@@ -33,6 +45,12 @@ footer
     width: 200px;
     height: 200px;
     background-color: aqua;
+    
+}
+
+.font_devonshir
+{
+    font-family: 'devonshir';
 }
 
 .menu2
@@ -56,19 +74,50 @@ footer
     background-color: chocolate;
 }
 
-
-.section_prochainement
+@keyframes clignote
 {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+    0% {
+        opacity: .2; 
+    }
+    20% {
+        opacity: 1;
+    }  
+    100% {
+        opacity: .2;
+    }  
+}
+bloc_flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.prochainement
+{
+    display: inline-flex;
+    flex-direction: row; 
+    justify-content:center; 
     background-color: #579c87;
     color: #fdcb46;
     width: 275px;
-    height: 70px;    
+    padding: 10px;
     border-radius: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.prochainement span
+{
+    animation-name: clignote;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both    
+}
+.prochainement span:nth-child(2) {
+    animation-delay: .2s;
+}
+.prochainement span:nth-child(3) {
+    animation-delay: .4s;
 }
 
 .effet_wiggle:hover
@@ -76,6 +125,7 @@ footer
     animation: wiggle 500ms;
     animation-iteration-count: infinite;
 }
+
 @keyframes wiggle {
 /*  0% { transform: translate(1px, 1px) rotate(2deg); }
   20% { transform: translate(0px, 0px) rotate(-2deg); }
@@ -95,4 +145,58 @@ footer
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
+{
+    header
+    {
+        height: auto;
+        margin: 10px;
+    }    
+    footer
+    {
+        height:40px;    
+    }
+    .prochainement
+    {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        background-color: #579c87;
+        color: #fdcb46;
+        width: 175px;
+        height: 30px;    
+        border-radius: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-height: 10px) and (max-width: 10px) /* Règles CSS petites fenetres */
+{
+    header
+    {
+        height: auto;
+        margin: 10px;
+    }    
+    footer
+    {
+        height:40px;    
+    }
+    .prochainement
+    {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        background-color: #579c87;
+        color: #fdcb46;
+        width: 175px;
+        height: 30px;    
+        border-radius: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+                
+    }
 }
