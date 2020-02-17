@@ -13,6 +13,11 @@
     font-family: 'segoeprb';
     src: url('fonts/segoeprb.ttf') format('truetype');
 }
+@font-face
+{
+    font-family: 'candida';
+    src: url('fonts/CandidaStd-Bold.otf');
+}
 header
 {
     display: flex; 
@@ -20,8 +25,8 @@ header
     justify-content: center; 
     background-color: #579c87;
     color: #fdcb46;
-    height: 150px;
-    margin-bottom: 50px;
+    height: 50px;
+    margin-bottom: 10px;
     font-family: 'Firasans-Bold';
 }
 
@@ -42,41 +47,51 @@ footer
     justify-content:space-around;
     flex-direction:row;
     margin-top: 50px;  
-    width: 600px;
+    width: 800px;
 }
 .img_music
 {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     display: block;
 }
 .section1
 {
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-    margin: auto;
+    width: 300px;
+    height: 400px;
+    background-color: #fcdfdb;
+}
+.titre_segoe
+{
+    display: block;
+    font-family: 'segoeprb';
+    font-size: large;
 }
 .menu1
 {
+    margin-top: 100px;
     font-family: 'devonshir';
+    font-size: x-large;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 1000ms;
 }
 .menu1:hover
 {
-    transform: scale(1.40);
+    transform: scale(1.75);
+    animation: text_opacity 1500ms linear forwards;
+
 }
+
 .section2
 {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    margin: auto;
+    width: 300px;
+    height: 400px;
+    background-color: #fff5fe;
 }
 .menu2
 {
+    margin-top: 230px;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 1000ms;
@@ -84,13 +99,29 @@ footer
 .menu2:hover
 {
     transform: scale(1.40);
+    animation: text_opacity 1500ms linear forwards;
+}
+.titre_chic
+{
+    font-family: 'Croissant One', cursive;
+    font-size: large;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(300deg,#D8852E, #915DFC);
+    -webkit-background-clip: text;    
+}
+.titre_candida
+{
+    color:#c77412;
+    display: block;
+    font-family: 'candida';
+    font-size: large;
+
 }
 .section3
 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 400px;
     background-color: green;
-    margin: auto;
 }
 .menu3
 {
@@ -101,13 +132,13 @@ footer
 .menu3:hover
 {
     transform: scale(1.40);
+    animation: text_opacity 1500ms linear forwards;
 }
 .section4
 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 400px;
     background-color: chocolate;
-    margin: auto;
 }
 .menu4
 {
@@ -119,7 +150,7 @@ footer
 .menu4:hover
 {
     transform: scale(1.40);
-    opacity: 1;
+    animation: text_opacity 1500ms linear forwards;
 }
 
 
@@ -153,8 +184,8 @@ bloc_flex
     width: 275px;
     padding: 10px;
     border-radius: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 .prochainement span
 {
@@ -188,6 +219,20 @@ bloc_flex
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes text_opacity {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
