@@ -8,7 +8,11 @@
     font-family: 'devonshir';
     src: url('fonts/devonshir/devonshire-regular.ttf') format('truetype');
 }
-
+@font-face
+{
+    font-family: 'segoeprb';
+    src: url('fonts/segoeprb.ttf') format('truetype');
+}
 header
 {
     display: flex; 
@@ -38,41 +42,86 @@ footer
     justify-content:space-around;
     flex-direction:row;
     margin-top: 50px;  
+    width: 600px;
 }
-
-.menu1
+.img_music
+{
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+.section1
 {
     width: 200px;
     height: 200px;
     background-color: aqua;
-    
+    margin: auto;
 }
-
-.font_devonshir
+.menu1
 {
     font-family: 'devonshir';
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
 }
-
-.menu2
+.menu1:hover
+{
+    transform: scale(1.40);
+}
+.section2
 {
     width: 200px;
     height: 200px;
     background-color: blue;
+    margin: auto;
 }
-
-.menu3
+.menu2
+{
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.menu2:hover
+{
+    transform: scale(1.40);
+}
+.section3
 {
     width: 200px;
     height: 200px;
     background-color: green;
+    margin: auto;
 }
-
-.menu4
+.menu3
+{
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.menu3:hover
+{
+    transform: scale(1.40);
+}
+.section4
 {
     width: 200px;
     height: 200px;
     background-color: chocolate;
+    margin: auto;
 }
+.menu4
+{
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1000ms;
+    opacity: 0.8;
+}
+.menu4:hover
+{
+    transform: scale(1.40);
+    opacity: 1;
+}
+
 
 @keyframes clignote
 {
@@ -93,6 +142,7 @@ bloc_flex
     justify-content: center;
     margin: auto;
 }
+
 .prochainement
 {
     display: inline-flex;
@@ -127,13 +177,6 @@ bloc_flex
 }
 
 @keyframes wiggle {
-/*  0% { transform: translate(1px, 1px) rotate(2deg); }
-  20% { transform: translate(0px, 0px) rotate(-2deg); }
-  40% { transform: translate(-1px, -1px) rotate(2deg); }
-  60% { transform: translate(0px, 0px) rotate(-2deg); }
-  80% { transform: translate(-1px, -1px) rotate(2deg); }
-  100% { transform: translate(0px, 0px) rotate(-2deg); }
-*/
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
   20% { transform: translate(-3px, 0px) rotate(1deg); }
