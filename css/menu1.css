@@ -1,0 +1,91 @@
+@font-face
+{
+    font-family: 'devonshir';
+    src: url('../fonts/devonshir/devonshire-regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Typo_Comics';
+    src: url('../fonts/Typo_Comics/typo_comics_demo.otf');
+}
+
+header
+{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    background-color: #579c87;
+    color: #fdcb46;
+    height: 50px;
+    margin-bottom: 10px;
+    font-family: 'Firasans-Bold';
+}
+
+footer
+{
+    display: flex;
+    justify-content:space-around;
+    position: fixed;
+    bottom: 0px;
+    background-color: #579c87;
+    color: #fdcb46;
+    font-family: 'NoyhRW01-SemiLight';
+    width:100%;        
+}
+
+.img_music
+{
+    width: 10%;
+    height: 10%;
+    display: block;    
+}
+
+.titre_menu1
+{
+    font-family: 'devonshir';
+    font-size: 3vw;
+}
+.section_menu1
+{    
+    display: inline-flex; 
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    overflow:hidden;
+    margin: 50px;
+    background-color: #fcdfdb;    
+    box-shadow: 1px 1px 12px #555;
+}
+.titre_entree
+{
+    margin-left: 100px;
+    margin-right: 100px;    
+    font-family: 'Typo_Comics';
+    font-size: 2vw;
+    text-align: bottom;
+}
+.img_menu1
+{
+    width: 100%;
+    height: 100%;    
+}
+
+@media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
+{
+    .img_menu1
+    {
+        width: 15%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-height: 1000px) and (max-width: 1000px) /* Règles CSS petites fenetres */
+{
+    .img_menu1
+    {
+        width: 15%;
+        height: auto;
+    }
+
+}

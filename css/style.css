@@ -23,6 +23,17 @@
     font-family: 'verao';
     src: url('../fonts/verao/Verao-Regular.otf');
 }
+@font-face
+{
+    font-family: 'kaushan';
+    src: url('../fonts/KaushanScript-Regular.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: "NoyhRW01-SemiLight"; 
+    src: url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.eot"); src: url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.woff") format("woff"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.svg#NoyhRW01-SemiLight") format("svg"); 
+}
+
 header
 {
     display: flex; 
@@ -42,8 +53,13 @@ footer
     position: fixed;
     bottom: 0px;
     background-color: #579c87;
-    color: #fdcb46;    
+    color: #fdcb46;
+    font-family: 'NoyhRW01-SemiLight';
     width:100%;        
+}
+a
+{
+    text-decoration: none;    
 }
 
 .conteneur_flexbox
@@ -56,25 +72,45 @@ footer
 }
 .img_music
 {
-    width: 60%;
-    height: 60%;
-    display: block;
+    width: 30%;
+    height: 30%;
+    display: block;    
 }
 .section1
 {
     width: 300px;
     height: 400px;
     background-color: #fcdfdb;
+    box-shadow: 1px 1px 12px #555;
+}
+.titre1
+{
+    color:black;
 }
 .titre_segoe
 {
     display: block;
     font-family: 'segoeprb';
     font-size: large;
+    color:black;
+}
+.titre_segoe_blue
+{
+    display: block;
+    font-family: 'segoeprb';
+    font-size: x-large;
+    color: #0887fb;
+}
+.titre_segoe_green
+{
+    display: block;
+    font-family: 'segoeprb';
+    font-size: x-large;
+    color: #72bf56;
 }
 .menu1
 {
-    margin-top: 100px;
+    margin-top: 130px;
     font-family: 'devonshir';
     font-size: x-large;
     transform: scale(1);
@@ -92,10 +128,11 @@ footer
     width: 300px;
     height: 400px;
     background-color: #fff5fe;
+    box-shadow: 1px 1px 12px #555;
 }
 .menu2
 {
-    margin-top: 230px;
+    margin-top: 170px;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 1000ms;
@@ -118,7 +155,7 @@ footer
     color:#c77412;
     display: block;
     font-family: 'candida';
-    font-size: large;
+    font-size: x-large;
 }
 .titre_verao
 {    
@@ -129,13 +166,15 @@ footer
     -webkit-background-clip: text;
 }
 .section3
-{
+{    
     width: 300px;
     height: 400px;
     background-color: #f9f9f9;
+    box-shadow: 1px 1px 12px #555;
 }
 .menu3
 {
+    margin-top: 150px;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 1000ms;
@@ -150,9 +189,19 @@ footer
     width: 300px;
     height: 400px;
     background-color: #fdfffd;
+    box-shadow: 1px 1px 12px #555;
+}
+.titre4
+{
+    -webkit-text-fill-color: transparent;
+    font-family: 'kaushan';
+    font-size: x-large;
+    background: -webkit-linear-gradient(left,#3D9339, #BFFF7E);
+    -webkit-background-clip: text;
 }
 .menu4
 {
+    margin-top: 170px;
     transform: scale(1);
     transition-property: transform;
     transition-duration: 1000ms;
@@ -164,19 +213,6 @@ footer
     animation: text_opacity 1500ms linear forwards;
 }
 
-
-@keyframes clignote
-{
-    0% {
-        opacity: .2; 
-    }
-    20% {
-        opacity: 1;
-    }  
-    100% {
-        opacity: .2;
-    }  
-}
 bloc_flex
 {
     display: flex;
@@ -190,8 +226,9 @@ bloc_flex
     display: inline-flex;
     flex-direction: row; 
     justify-content:center; 
-    background-color: #579c87;
+    background-color: #579c87;    
     color: #fdcb46;
+    font-family: 'NoyhRW01-SemiLight';
     width: 275px;
     padding: 10px;
     border-radius: 30px;
@@ -216,6 +253,20 @@ bloc_flex
 {
     animation: wiggle 500ms;
     animation-iteration-count: infinite;
+}
+
+
+@keyframes clignote
+{
+    0% {
+        opacity: .2; 
+    }
+    20% {
+        opacity: 1;
+    }  
+    100% {
+        opacity: .2;
+    }  
 }
 
 @keyframes wiggle {
@@ -246,56 +297,3 @@ bloc_flex
     }
 }
 
-@media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
-{
-    header
-    {
-        height: auto;
-        margin: 10px;
-    }    
-    footer
-    {
-        height:40px;    
-    }
-    .prochainement
-    {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center; 
-        background-color: #579c87;
-        color: #fdcb46;
-        width: 175px;
-        height: 30px;    
-        border-radius: 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-
-@media screen and (max-height: 10px) and (max-width: 10px) /* Règles CSS petites fenetres */
-{
-    header
-    {
-        height: auto;
-        margin: 10px;
-    }    
-    footer
-    {
-        height:40px;    
-    }
-    .prochainement
-    {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center; 
-        background-color: #579c87;
-        color: #fdcb46;
-        width: 175px;
-        height: 30px;    
-        border-radius: 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-                
-    }
-}

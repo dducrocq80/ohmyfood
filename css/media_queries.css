@@ -1,0 +1,53 @@
+@media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
+{
+    header
+    {
+        height: auto;
+        margin: 10px;
+    }    
+    footer
+    {
+        height:40px;    
+    }
+    .prochainement
+    {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        background-color: #579c87;
+        color: #fdcb46;
+        width: 175px;
+        height: 30px;    
+        border-radius: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-height: 10px) and (max-width: 10px) /* Règles CSS petites fenetres */
+{
+    header
+    {
+        height: auto;
+        margin: 10px;
+    }    
+    footer
+    {
+        height:40px;    
+    }
+    .prochainement
+    {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        background-color: #579c87;
+        color: #fdcb46;
+        width: 175px;
+        height: 30px;    
+        border-radius: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+                
+    }
+}
