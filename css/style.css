@@ -1,22 +1,27 @@
 @font-face
 {
     font-family: 'FiraSans-Bold';
-    src: url('fonts/fira_sans/FiraSans-Bold.otf');    
+    src: url('../fonts/fira_sans/FiraSans-Bold.otf');    
 }
 @font-face
 {
     font-family: 'devonshir';
-    src: url('fonts/devonshir/devonshire-regular.ttf') format('truetype');
+    src: url('../fonts/devonshir/devonshire-regular.ttf') format('truetype');
 }
 @font-face
 {
     font-family: 'segoeprb';
-    src: url('fonts/segoeprb.ttf') format('truetype');
+    src: url('../fonts/segoeprb.ttf') format('truetype');
 }
 @font-face
 {
     font-family: 'candida';
-    src: url('fonts/CandidaStd-Bold.otf');
+    src: url('../fonts/CandidaStd-Bold.otf');
+}
+@font-face
+{
+    font-family: 'verao';
+    src: url('../fonts/verao/Verao-Regular.otf');
 }
 header
 {
@@ -80,7 +85,6 @@ footer
 {
     transform: scale(1.75);
     animation: text_opacity 1500ms linear forwards;
-
 }
 
 .section2
@@ -115,13 +119,20 @@ footer
     display: block;
     font-family: 'candida';
     font-size: large;
-
+}
+.titre_verao
+{    
+    font-family: 'verao';
+    font-size: 40px;
+    -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(left ,#0229dd,#0887fb);
+    -webkit-background-clip: text;
 }
 .section3
 {
     width: 300px;
     height: 400px;
-    background-color: green;
+    background-color: #f9f9f9;
 }
 .menu3
 {
@@ -138,7 +149,7 @@ footer
 {
     width: 300px;
     height: 400px;
-    background-color: chocolate;
+    background-color: #fdfffd;
 }
 .menu4
 {
