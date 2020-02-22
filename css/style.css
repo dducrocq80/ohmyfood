@@ -70,7 +70,12 @@ a
     margin-top: 50px;  
     width: 800px;
 }
-.img_music
+.img_logo_omf
+{
+    width: 25vh;
+    height: auto;
+}
+    .img_music
 {
     width: 30%;
     height: 30%;
