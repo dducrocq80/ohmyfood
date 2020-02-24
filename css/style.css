@@ -48,8 +48,7 @@ footer
     position: fixed;
     bottom: 0px;
     background-color: #579c87;
-    color: #fdcb46;
-    font-family: 'NoyhRW01-SemiLight';
+    color: #fdcb46;    
     width:100%;        
 }
 
@@ -74,6 +73,7 @@ a
 {
     width: 225px;
     height: auto;
+    align-self: center;
 }
 
 .img_music
@@ -154,10 +154,10 @@ a
 .titre_chic
 {
     font-family: 'Croissant One', cursive;
-    font-size: large;
-    -webkit-text-fill-color: transparent;
-    background: -webkit-linear-gradient(300deg,#D8852E, #915DFC);
-    -webkit-background-clip: text;    
+    font-size: large;    
+    -webkit-text-fill-color: transparent;    
+    background: -webkit-linear-gradient(300deg,#D8852E, #915DFC);    
+    -webkit-background-clip: text;
 }
 .titre_candida
 {

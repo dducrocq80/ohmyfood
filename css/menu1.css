@@ -37,6 +37,7 @@ header
 {
     width: 225px;
     height: auto;
+    align-self: center;
 }
 
 a
