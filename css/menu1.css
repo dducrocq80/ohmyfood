@@ -23,15 +23,19 @@ header
     flex-direction: column; 
     justify-content: center; 
     background-color: #579c87;
-    color: #fdcb46;
+    color: #fdcb46;    
     height: 50px;
     margin-bottom: 10px;
     font-family: 'Firasans-Bold';
 }
-
+.section
+{
+    width: auto;
+    height: auto;
+}
 .img_logo_omf
 {
-    width: 25vh;
+    width: 225px;
     height: auto;
 }
 
@@ -49,7 +53,7 @@ footer
     display: flex;
     justify-content:space-around;
     position: fixed;
-    bottom: 0px;
+    bottom: 0px;    
     background-color: #579c87;
     color: #fdcb46;
     font-family: 'NoyhRW01-SemiLight';
@@ -74,13 +78,12 @@ footer
     justify-content:center;
     flex-direction: row;
     align-items: center;
-    overflow:hidden;        
     margin-top: 20px;
 }
 .titre_entree
 {
     width: 20vw;
-    font-family: 'Typo_Comics';
+    font-family: 'Typo_Comics';   
     font-size: 2vw;
 }
 .animation_souligne
@@ -97,15 +100,15 @@ footer
 }
 
 article
-{               
+{                   
     padding: 0px;
     font-family: 'segoeprb';    
 }
 
 table
 {    
-    width: 50vw;    
-    font-family: 'segoeprb';    
+    width: 50vw;        
+    font-family: 'segoeprb';        
 }
 tr
 {
@@ -166,6 +169,7 @@ tr
 
 @media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
 {
+ 
     .img_menu1
     {
         width: 15%;
@@ -184,9 +188,9 @@ tr
         font-size: 2vw;
     }
 }
-
-@media screen and (max-height: 1000px) and (max-width: 1000px) /* Règles CSS petites fenetres */
+@media screen and (max-width: 800) /* Règles CSS petites fenetres */
 {
+
     .img_menu1
     {
         width: 15%;
@@ -203,6 +207,29 @@ tr
     footer
     {
         font-size: 2vw;
+    }
+
+}
+
+@media screen and (max-width: 1024px) /* Règles CSS petites fenetres */
+{
+
+    .img_menu1
+    {
+        width: 15%;
+        height: auto;
+    }
+
+    article
+    {               
+        font-size: 2vw;
+        padding: 0px;
+        font-family: 'segoeprb';    
+    }
+
+    footer
+    {
+        font-size: 2vw;        
     }
 
 }

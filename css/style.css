@@ -28,11 +28,6 @@
     font-family: 'kaushan';
     src: url('../fonts/KaushanScript-Regular.ttf') format('truetype');
 }
-@font-face
-{
-    font-family: "NoyhRW01-SemiLight"; 
-    src: url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.eot"); src: url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.woff") format("woff"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2ece2ca570f9b741d03cd6305ce9f8d5.svg#NoyhRW01-SemiLight") format("svg"); 
-}
 
 header
 {
@@ -77,15 +72,17 @@ a
 }
 .img_logo_omf
 {
-    width: 25vh;
+    width: 225px;
     height: auto;
 }
-    .img_music
+
+.img_music
 {
     width: 30%;
     height: 30%;
     display: block;    
 }
+
 .section1
 {
     width: 300px;
@@ -93,10 +90,12 @@ a
     background-color: #fcdfdb;
     box-shadow: 1px 1px 12px #555;
 }
+
 .titre1
 {
     color:black;
 }
+
 .titre_segoe
 {
     display: block;
