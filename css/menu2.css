@@ -213,21 +213,21 @@ tr
 @keyframes souligne
 {
     0% 
-    {
-        width: 5vw;
-        transform: translateX(-500%);        
-        visibility: visible;        
+    {                
+        width: 100px;
+        transform: translateX(-500%); 
+        visibility: visible;  
     }
     
     100% 
-    {                       
-        width: 5vw;
-        transform: scaleX(5);        
-        visibility: visible;
+    {         
+        width: 100px;
+        transform: scalex(5);        
+        visibility: visible;        
     }
 }
 
-@media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
+@media all and (max-width: 480px) /* Règles CSS pour les mobiles */
 {
  
     .img_menu2

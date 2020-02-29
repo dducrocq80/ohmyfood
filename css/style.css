@@ -381,7 +381,7 @@ bloc_flex
     }
 }
 
-@media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
+@media all and (max-width: 480px) /* Règles CSS pour les mobiles */
 {
     .conteneur_flexbox
     {
