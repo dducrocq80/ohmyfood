@@ -1,0 +1,300 @@
+body
+{
+    background-color: #fff5fe;
+}
+header
+{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    background-color: #579c87;
+    color: #fdcb46;    
+    height: 50px;
+    margin-bottom: 10px;
+    font-family: 'Firasans-Bold';
+    text-align: center;
+}
+section
+{
+    width: auto;
+    height: auto;    
+    text-align: center;
+}
+
+article
+{
+    display:flex;
+    justify-content: center;   
+    flex-direction: row;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.img_logo_omf
+{
+    width: 225px;
+    height: auto;
+    align-self: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+.a_footer
+{
+    color: #fdcb46;
+}
+
+footer
+{
+    display: flex;
+    justify-content:space-around;
+    position: fixed;
+    bottom: 0px;    
+    background-color: #579c87;
+    color: #fdcb46;
+    font-family: 'NoyhRW01-SemiLight';
+    width:100%;        
+}
+
+.titre_menu2
+{
+    font-family: 'Croissant One', cursive;
+    font-size: xx-large;    
+    -webkit-text-fill-color: transparent;    
+    background: -webkit-linear-gradient(300deg,#D8852E, #915DFC);    
+    -webkit-background-clip: text;
+    text-align: center;
+}
+.section_menu
+{
+    display: inline-flex; 
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;  
+    text-align: center;
+}
+
+.titre_entree_1
+{    
+    font-family: 'Merriweather';
+    font-size: 200%;
+    color:red;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:305px;
+}
+.titre_entree_2
+{    
+    font-family: 'Merriweather';
+    font-size: 200%;
+    color:#a56799;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:305px;
+}
+.titre_entree_3
+{    
+    font-family: 'Merriweather';
+    font-size: 200%;
+    color:#6e4ccc;
+    padding-left: 10px;
+    padding-right: 10px;
+    width:305px;
+}
+
+.animation_souligne_1
+{    
+    border: solid 1px;
+    visibility: hidden;
+    margin-left: 30px;    
+    color: red;
+}
+
+.animation_souligne_2
+{    
+    border: solid 1px;
+    visibility: hidden;
+    margin-left: 30px;    
+    color: #a56799;
+}
+
+.animation_souligne_3
+{    
+    border: solid 1px;
+    visibility: hidden;
+    margin-left: 30px;    
+    color: #6e4ccc;
+}
+
+.titre_entree_1:hover div
+{    
+    animation: souligne;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.titre_entree_2:hover div
+{    
+    animation: souligne;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.titre_entree_3:hover div
+{    
+    animation: souligne;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.table_menu_1
+{    
+    width: 50vw;
+    font-family: 'Merriweather';
+    color: red;
+    border-collapse: collapse;        
+}
+.table_menu_2
+{    
+    width: 50vw;        
+    font-family: 'Merriweather';
+    color: #a56799;
+    border-collapse: collapse;    
+}
+.table_menu_3
+{    
+    width: 50vw;        
+    font-family: 'Merriweather';
+    color: #6e4ccc;
+    border-collapse: collapse;    
+}
+
+tr
+{
+    text-align: left;    
+    vertical-align: bottom;
+    
+}
+.td_plat
+{    
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 15px;
+}
+.td_prix
+{
+    width: auto;
+    text-align: right;
+    vertical-align: bottom;
+    padding: 15px;    
+}
+
+.effet_wiggle:hover
+{
+    animation: wiggle 500ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes souligne
+{
+    0% 
+    {
+        width: 5vw;
+        transform: translateX(-500%);        
+        visibility: visible;        
+    }
+    
+    100% 
+    {                       
+        width: 5vw;
+        transform: scaleX(5);        
+        visibility: visible;
+    }
+}
+
+@media all and (max-device-width: 480px) /* Règles CSS pour les mobiles */
+{
+ 
+    .img_menu2
+    {
+        width: 15%;
+        height: auto;
+    }
+        
+    .titre_entree_1, .titre_entree_2, .titre_entree_3
+    {
+        font-size: 50%;
+        width: 200px;
+    }
+    
+}
+@media screen and (max-width: 800) /* Règles CSS petites fenetres */
+{
+
+    .img_menu2
+    {
+        width: 15%;
+        height: auto;
+    }
+
+
+    .titre_entree_1, .titre_entree_2, .titre_entree_3
+    {
+        font-size: 75%;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) /* Règles CSS petites fenetres */
+{
+
+    .img_menu2
+    {
+        width: 15%;
+        height: auto;
+    }
+
+
+    .titre_entree_1, .titre_entree_2, .titre_entree_3
+    {
+        font-size: 125%;
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 1600px) /* Règles CSS petites fenetres */
+{   
+
+    .titre_entree_1, .titre_entree_2, .titre_entree_3
+    {
+        font-size: 200%;
+        width: 600px;
+    }
+    
+    .td_prix
+    {
+        text-align: left;
+        width: 30%;
+    }
+    .td_plat
+    {
+        width:70%;
+    }
+}
