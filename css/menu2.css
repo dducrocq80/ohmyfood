@@ -29,6 +29,12 @@ article
     text-align: center;    
 }
 
+li
+{
+    list-style: none;
+    text-align: left;
+}
+
 .img_logo_omf
 {
     width: 225px;
@@ -40,6 +46,7 @@ a
 {
     text-decoration: none;
 }
+
 .a_footer
 {
     color: #fdcb46;
@@ -66,12 +73,22 @@ footer
     -webkit-background-clip: text;
     text-align: center;
 }
+
 .section_menu
 {
     display: inline-flex; 
     justify-content:center;
     flex-direction: row;
     align-items: center;  
+    text-align: center;
+}
+
+.div_titre
+{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     text-align: center;
 }
 
@@ -142,39 +159,20 @@ footer
     background-color: #6e4ccc;
 }
 
-.table_menu_1
+.li_menu1
 {        
     font-family: 'Merriweather';
     color: red;     
 }
-.table_menu_2
+.li_menu2
 {           
     font-family: 'Merriweather';
     color: #a56799;    
 }
-.table_menu_3
+.li_menu3
 {          
     font-family: 'Merriweather';
     color: #6e4ccc;     
-}
-
-tr
-{
-    text-align: left;    
-    vertical-align: bottom;
-    
-}
-.td_plat
-{    
-    text-align: left;
-    vertical-align: top;
-    padding-bottom: 15px;    
-}
-.td_prix
-{    
-    text-align: right;
-    vertical-align: top;
-    padding: 15px;    
 }
 
 .effet_wiggle:hover
@@ -200,13 +198,13 @@ tr
 
 @media all and (max-width: 480px) /* Règles CSS pour les mobiles */
 {
- 
+ /*
     .img_menu2
     {
         width: 15%;
         height: auto;
     }
-        
+*/     
     .titre_entree_1, .titre_entree_2, .titre_entree_3
     {
         font-size: 50%;
@@ -216,14 +214,14 @@ tr
 }
 @media screen and (max-width: 800) /* Règles CSS petites fenetres */
 {
-
+/*
     .img_menu2
     {
         width: 15%;
         height: auto;
     }
 
-
+*/
     .titre_entree_1, .titre_entree_2, .titre_entree_3
     {
         font-size: 75%;
@@ -234,14 +232,14 @@ tr
 
 @media screen and (max-width: 1024px) /* Règles CSS petites fenetres */
 {
-
+/*
     .img_menu2
     {
         width: 15%;
         height: auto;
     }
 
-
+*/
     .titre_entree_1, .titre_entree_2, .titre_entree_3
     {
         font-size: 125%;
